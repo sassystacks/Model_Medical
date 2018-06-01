@@ -1,45 +1,158 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
 
+    
+    body {
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 15px;
+      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+      background-image: linear-gradient(to right, #f78ca033 0%, #f9748f33 19%, #fd868c33 60%, #fe9a8b33 100%);
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 26.4px;
+    }
+
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffffff77;
+      border-radius: 10px;
+
+      font-weight: 600;
+    }
+
+    ul.topnav li {
+      float: left;
+    }
+
+    ul.topnav li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 5px 12px;
+      text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {
+      /*background-color: #111;*/
+      color: white;
+      border-radius: 10px;
+      
+    }
+
+    ul.topnav li a.active {
+      border-radius: 10px;
+      background-color: #FA5E62;
+      color: white
+    }
+
+    ul.topnav li.right {
+      float: right;
+    }
+
+
+
+
+    .logo {
+
+      display: block;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+
+
+    }
+
+
+
+    .motivation {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      ul.topnav li.right,
+      ul.topnav li {
+        float: none;
+      }
+
+      .logo {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+  </style>
+  <title>Model Medical Innovations</title>
 </head>
 
 <body>
 
-  <a class='menubar'>
-
-    <ul class='nav'>
-      <li>
-        <a href="awards.html">Awards</a>
-      </li>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-      <li>
-        <a href="about.html">About us</a>
-      </li>
-
-  </a>
-
+  <ul class="topnav">
+    <li>
+      <a class="active" href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#news">News</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+    <li class="right">
+      <a href="#about">About</a>
+    </li>
   </ul>
 
-  <a class='intro'>
-    <img src="mmi.png" alt="Model Medical Innovations" class="logo">
 
 
-    <a class="contact">contact us at</a>
+  <a class='content'>
 
-    <a href="mailto:communications@modelmedical.ca" class="mail">
-      communications@modelmedical.ca
+    <a class='section/intro'>
+      <img src="mmi.png" alt="Model Medical Innovations" class="logo">
+
+      <p class="motivation">Model Medical Innovations strives to empower healthcare professionals and provide better treatment and comfort for
+        patients. Through research and working directly with nurses, doctors, and patients, we innovate solutions for current
+        healthcare challenges. Our team’s passion to improve healthcare for all is the driving force behind all of our work.
+    </a>
+
+    <a class='section/portfolio'>
+    </a>
+
+    <a class='section/aboutus'>
+    </a>
+
+    <a>
+      <p class="contact">contact us at
+        <a href="mailto:communications@modelmedical.ca">
+          communications@modelmedical.ca
+        </a>
+      </p>
     </a>
 
   </a>
 
+
+
+
+
+  </a>
 
 </body>
 
