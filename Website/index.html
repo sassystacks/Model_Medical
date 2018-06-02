@@ -5,12 +5,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-
-
     body {
       margin-left: 20%;
       margin-right: 20%;
-      height: 1000px;
+      height: 100%;
       font-size: 15px;
       font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
       background: linear-gradient(-225deg, #E3FDF555 0%, #FFE6FA55 100%);
@@ -18,6 +16,10 @@
       font-variant: normal;
       font-weight: 400;
       line-height: 26.4px;
+    }
+
+    h1 {
+      margin-top: 5%;
     }
 
     ul.topnav {
@@ -66,23 +68,70 @@
     .logo {
 
       display: block;
-      width: 600px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
-
-
+      margin-top: 5%
     }
 
 
 
     .motivation {
       font-style: italic;
-      text-align: center;
+
     }
 
     .contact {
       text-align: center;
       font-weight: 600;
+    }
+
+    .column {
+      float: left;
+      width: 30.0%;
+      margin-bottom: 16px;
+      padding: 0 10px;
+    }
+
+    /* Add some shadows to create a card effect */
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Some left and right padding inside the container */
+
+    .container {
+      padding: 0 16px;
+    }
+
+    /* Clear floats */
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table-row;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
     }
 
     @media screen and (max-width: 600px) {
@@ -98,6 +147,25 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .column {
+        width: 100%;
+        display: block;
+      }
+
+
+    }
+
+    @media screen and (min-width: 1000px) {
+
+
+      .logo {
+        display: block;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
 
     }
   </style>
@@ -128,15 +196,136 @@
     <a class='section/intro'>
       <img src="mmi.png" alt="Model Medical Innovations" class="logo">
 
+      <h1>Motivation</h1>
       <p class="motivation">Model Medical Innovations strives to empower healthcare professionals and provide better treatment and comfort for
         patients. Through research and working directly with nurses, doctors, and patients, we innovate solutions for current
         healthcare challenges. Our team’s passion to improve healthcare for all is the driving force behind all of our work.
     </a>
 
     <a class='section/portfolio'>
+      <h1>Portfolio</h1>
+      <h2> LIVE Pole </h2>
+      <p> Description description description description description description description.</p>
+      <h3> Awards </h3>
+      <p> Description description description description description description description.</p>
+      <h2>DEXT Tactile</h2>
+      <p> Description description description description description description description.</p>
+      <h3>EQUI Walker</h3>
+      <p> Description description description description description description description.</p>
     </a>
 
     <a class='section/aboutus'>
+      <h1>About us</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO &amp; Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO &amp; Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p>
+                <button class="button">Contact</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--
+      <h2>David Tanhelson</h2>
+      <p>test </p>
+      <h2>Luis Souto Maior</h2>
+      <p>test </p>
+      <h2>Miriam Nightingale</h2>
+      <p>test </p>
+      <h2>Saba Aslam</h2>
+      <p>test </p>
+      <h2>Richard Beddoes</h2>
+      <p>test </p>
+      <h2>Curt Zerr</h2>
+      <p>test </p>
+      -->
+
     </a>
 
     <a>
