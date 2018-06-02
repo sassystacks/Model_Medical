@@ -3,15 +3,36 @@
 <html>
 
 <head>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin-left: 20%;
       margin-right: 20%;
-      height: 100%;
+
       font-size: 15px;
       font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-      background: linear-gradient(-225deg, #E3FDF555 0%, #FFE6FA55 100%);
+      /*background: linear-gradient(-225deg, #E3FDF500 0%, #FFE6FA00 100%);*/
       font-style: normal;
       font-variant: normal;
       font-weight: 400;
@@ -19,16 +40,53 @@
     }
 
     h1 {
-      margin-top: 5%;
+      padding-top: 7%;
+    }
+
+    /** blockquote styles **/
+
+    .motivation {
+      width: 70%;
+      margin-left: 10%;
+      margin-right: 10%;
+      background: url('q1.png') top left no-repeat;
+      background-size: 30px 30px;
+      padding-left: 55px;
+      line-height: 18px;
+      color: #575757;
+
+    }
+
+    .motivation p {
+      padding-right: 35px;
+      line-height: 18px;
+      background: url('q2.png') bottom right no-repeat;
+      background-size: 30px 30px;
+      padding-bottom: 0px;
+      padding-top: 15px;
+      color: #333;
+      font-size: 18px;
+
     }
 
     ul.topnav {
       list-style-type: none;
-      margin: 0;
+      margin: 10;
       padding: 0;
+      margin-bottom: 20px;
+
+      position: fixed;
+
+      left: 5%;
+      right: 5%;
+      top: 5px;
+
+
       overflow: hidden;
-      background-color: #fff;
+      background-color: #fffFFFDD;
       border-radius: 10px;
+
+
 
       font-weight: 600;
     }
@@ -54,7 +112,8 @@
 
     ul.topnav li a.active {
       border-radius: 10px;
-      background-color: #FA5E62;
+      background: linear-gradient(0deg, #FA5553 0%, #FB6E77 100%);
+
       color: white
     }
 
@@ -84,11 +143,12 @@
     .contact {
       text-align: center;
       font-weight: 600;
+      margin-top: 5%;
     }
 
     .column {
       float: left;
-      width: 30.0%;
+      width: 45.0%;
       margin-bottom: 16px;
       padding: 0 10px;
     }
@@ -134,23 +194,68 @@
       background-color: #555;
     }
 
+    .us {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      padding-top: 20px;
+      padding-left: 20px;
+
+    }
+
     @media screen and (max-width: 600px) {
 
       ul.topnav li.right,
       ul.topnav li {
         float: none;
-      }
 
-      .logo {
-        display: block;
+      }
+      ul.topnav {
+        position: relative;
         width: 90%;
+
+      }
+      .logo {
+
+        display: block;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
       }
       .column {
-        width: 100%;
+        width: 80%;
         display: block;
       }
+      .content {
+        padding-top: 0;
+      }
+
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .column {
+
+        width: 90%;
+        display: block;
+      }
+
+
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      .logo {
+        width: 70%;
+      }
+
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .column {}
 
 
     }
@@ -164,7 +269,11 @@
         margin-left: auto;
         margin-right: auto;
       }
+      ul.topnav {
+        left: 20%;
+        right: 20%;
 
+      }
 
 
     }
@@ -176,7 +285,7 @@
 
   <ul class="topnav">
     <li>
-      <a class="active" href="#home">Home</a>
+      <a class="active" href="index.html">Home</a>
     </li>
     <li>
       <a href="#portfolio">Portfolio</a>
@@ -185,24 +294,28 @@
       <a href="#about">About us</a>
     </li>
     <li class="right">
-      <a href="#contact">Contact</a>
+      <a href="mailto:communications@modelmedical.ca">Contact</a>
     </li>
   </ul>
 
 
 
-  <a class='content'>
+  <div class='content'>
 
-    <a class='section/intro'>
+    <a class='section/intro' name='home'>
       <img src="mmi.png" alt="Model Medical Innovations" class="logo">
 
-      <h1>Motivation</h1>
-      <p class="motivation">Model Medical Innovations strives to empower healthcare professionals and provide better treatment and comfort for
-        patients. Through research and working directly with nurses, doctors, and patients, we innovate solutions for current
-        healthcare challenges. Our team’s passion to improve healthcare for all is the driving force behind all of our work.
+
+      <div class="motivation">
+        <p>Model Medical Innovations strives to empower healthcare professionals and provide better treatment and comfort for
+          patients. Through research and working directly with nurses, doctors, and patients, we innovate solutions for current
+          healthcare challenges. Our team’s passion to improve healthcare for all is the driving force behind all of our
+          work.
+        </p>
+      </div>
     </a>
 
-    <a class='section/portfolio'>
+    <a class='section/portfolio' name='portfolio'>
       <h1>Portfolio</h1>
       <h2> LIVE Pole </h2>
       <p> Description description description description description description description.</p>
@@ -210,100 +323,102 @@
       <p> Description description description description description description description.</p>
       <h2>DEXT Tactile</h2>
       <p> Description description description description description description description.</p>
-      <h3>EQUI Walker</h3>
+      <h2>EQUI Walker</h2>
       <p> Description description description description description description description.</p>
     </a>
 
-    <a class='section/aboutus'>
+    <a class='section/aboutus' name='about'>
       <h1>About us</h1>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO &amp; Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+      <div class='us'>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="david.jpg" alt="David" style="width:100%">
+              <div class="container">
+                <h2>David Tanhelson</h2>
+                <p class="title">CEO &amp; Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Mike" style="width:100%">
-            <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+          <div class="column">
+            <div class="card">
+              <img src="luis.jpg" alt="Luis" style="width:100%">
+              <div class="container">
+                <h2>Luis Souto Maior</h2>
+                <p class="title">Art Director</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
-            <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+          <div class="column">
+            <div class="card">
+              <img src="miriam.jpg" alt="Miriam" style="width:100%">
+              <div class="container">
+                <h2>Miriam Nightingale</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO &amp; Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="saba.jpg" alt="Saba" style="width:100%">
+              <div class="container">
+                <h2>Saba Aslam</h2>
+                <p class="title">CEO &amp; Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Mike" style="width:100%">
-            <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+          <div class="column">
+            <div class="card">
+              <img src="richard.jpg" alt="Richard" style="width:100%">
+              <div class="container">
+                <h2>Richard Beddoes</h2>
+                <p class="title">Art Director</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="card">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="John" style="width:100%">
-            <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p>
-                <button class="button">Contact</button>
-              </p>
+          <div class="column">
+            <div class="card">
+              <img src="curt.jpg" alt="Curt" style="width:100%">
+              <div class="container">
+                <h2>Curt Zerr</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p>
+                  <button class="button">Contact</button>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -312,23 +427,23 @@
 
 
       <!--
-      <h2>David Tanhelson</h2>
+      <h2></h2>
       <p>test </p>
-      <h2>Luis Souto Maior</h2>
+      <h2></h2>
       <p>test </p>
-      <h2>Miriam Nightingale</h2>
+      <h2></h2>
       <p>test </p>
-      <h2>Saba Aslam</h2>
+      <h2></h2>
       <p>test </p>
-      <h2>Richard Beddoes</h2>
+      <h2></h2>
       <p>test </p>
-      <h2>Curt Zerr</h2>
+      <h2></h2>
       <p>test </p>
-      -->
+     
 
     </a>
 
-    <a>
+    <a class="contact" name='contact'>
       <p class="contact">contact us at
         <a href="mailto:communications@modelmedical.ca">
           communications@modelmedical.ca
@@ -336,13 +451,13 @@
       </p>
     </a>
 
-  </a>
+    </a>
+    -->
 
 
 
 
-
-  </a>
+  </div>
 
 </body>
 
