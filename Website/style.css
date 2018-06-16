@@ -1,48 +1,183 @@
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 15px;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  /*background: linear-gradient(-225deg, #E3FDF500 0%, #FFE6FA00 100%);*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26.4px;
 }
 
-
-
-.logo {
-
-  
-  width: 442px;
-  height: 223px;
-
-
+h1 {
+  padding-top: 7%;
 }
 
+/** blockquote styles **/
 
+.motivation {
+  width: 70%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: url('q1.png') top left no-repeat;
+  background-size: 30px 30px;
+  padding-left: 55px;
+  line-height: 18px;
+  color: #575757;
+}
 
+.motivation p {
+  padding-right: 35px;
+  line-height: 18px;
+  background: url('q2.png') bottom right no-repeat;
+  background-size: 30px 30px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  color: #333;
+  font-size: 18px;
+}
 
-ul {
+ul.topnav {
   list-style-type: none;
-  margin: 0;
+  margin: 10;
   padding: 0;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 15%;
+  right: 15%;
+  top: 5px;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  background-color: #fffFFFDD;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
-li {
+ul.topnav li {
   float: left;
 }
 
-li a {
+ul.topnav li a {
   display: block;
-  color: #666;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 12px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #ddd;
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
 }
 
-li a.active {
-  color: white;
-  background-color: #4CAF50;
+ul.topnav li a.active {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #FA5553 0%, #FB6E77 100%);
+  color: white
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%
+}
+
+.motivation {
+  font-style: italic;
+}
+
+.contact {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.card {
+  float: left;
+}
+
+.clearfix {
+  *zoom: 1/* for IE */
+}
+
+.face {
+  width: 100%;
+  border-radius: 90%/100%;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add some shadows to create a card effect */
+
+
+.tab {
+  width: 100%;
+  table-layout: fixed
+}
+
+.tab th {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.description {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: url('q1.png') top left no-repeat;
+  background-size: 20px 20px;
+  padding-left: 35px;
+  line-height: 18px;
+  color: #575757;
+}
+
+.description p {
+  padding-right: 35px;
+  line-height: 18px;
+  background: url('q2.png') bottom right no-repeat;
+  background-size: 20px 20px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+
+/* Some left and right padding inside the container */
+
+.title {
+  color: grey;
+}
+
+.description {
+  text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+  }
+  ul.topnav {
+    position: relative;
+    width: 90%;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

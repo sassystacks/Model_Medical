@@ -25,263 +25,14 @@
   <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin-left: 20%;
-      margin-right: 20%;
-
-      font-size: 15px;
-      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-      /*background: linear-gradient(-225deg, #E3FDF500 0%, #FFE6FA00 100%);*/
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      line-height: 26.4px;
-    }
-
-    h1 {
-      padding-top: 7%;
-    }
-
-    /** blockquote styles **/
-
-    .motivation {
-      width: 70%;
-      margin-left: 10%;
-      margin-right: 10%;
-      background: url('q1.png') top left no-repeat;
-      background-size: 30px 30px;
-      padding-left: 55px;
-      line-height: 18px;
-      color: #575757;
-
-    }
-
-    .motivation p {
-      padding-right: 35px;
-      line-height: 18px;
-      background: url('q2.png') bottom right no-repeat;
-      background-size: 30px 30px;
-      padding-bottom: 0px;
-      padding-top: 15px;
-      color: #333;
-      font-size: 18px;
-
-    }
-
-    ul.topnav {
-      list-style-type: none;
-      margin: 10;
-      padding: 0;
-      margin-bottom: 20px;
-
-      position: fixed;
-
-      left: 5%;
-      right: 5%;
-      top: 5px;
-
-
-      overflow: hidden;
-      background-color: #fffFFFDD;
-      border-radius: 10px;
-
-
-
-      font-weight: 600;
-    }
-
-    ul.topnav li {
-      float: left;
-    }
-
-    ul.topnav li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 5px 12px;
-      text-decoration: none;
-    }
-
-    ul.topnav li a:hover:not(.active) {
-      background-color: #111;
-      color: white;
-      border-radius: 10px;
-
-    }
-
-    ul.topnav li a.active {
-      border-radius: 10px;
-      background: linear-gradient(0deg, #FA5553 0%, #FB6E77 100%);
-
-      color: white
-    }
-
-    ul.topnav li.right {
-      float: right;
-    }
-
-
-
-
-    .logo {
-
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5%
-    }
-
-
-
-    .motivation {
-      font-style: italic;
-
-    }
-
-    .contact {
-      text-align: center;
-      font-weight: 600;
-      margin-top: 5%;
-    }
-
-    .column {
-      float: left;
-      width: 45.0%;
-      margin-bottom: 16px;
-      padding: 0 10px;
-    }
-
-    /* Add some shadows to create a card effect */
-
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    /* Some left and right padding inside the container */
-
-    .container {
-      padding: 0 16px;
-    }
-
-    /* Clear floats */
-
-    .container::after,
-    .row::after {
-      content: "";
-      clear: both;
-      display: table-row;
-    }
-
-    .title {
-      color: grey;
-    }
-
-    .button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      background-color: #000;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .button:hover {
-      background-color: #555;
-    }
-
-    .us {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .content {
-      padding-top: 20px;
-      padding-left: 20px;
-
-    }
-
-    @media screen and (max-width: 600px) {
-
-      ul.topnav li.right,
-      ul.topnav li {
-        float: none;
-
-      }
-      ul.topnav {
-        position: relative;
-        width: 90%;
-
-      }
-      .logo {
-
-        display: block;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .column {
-        width: 80%;
-        display: block;
-      }
-      .content {
-        padding-top: 0;
-      }
-
-    }
-
-    @media screen and (max-width: 800px) {
-
-      .column {
-
-        width: 90%;
-        display: block;
-      }
-
-
-    }
-
-    @media screen and (max-width: 1000px) {
-
-      .logo {
-        width: 70%;
-      }
-
-      body {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-      .column {}
-
-
-    }
-
-    @media screen and (min-width: 1000px) {
-
-
-      .logo {
-        display: block;
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      ul.topnav {
-        left: 20%;
-        right: 20%;
-
-      }
-
-
-    }
-  </style>
+   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Model Medical Innovations</title>
 </head>
 
 <body>
+
+
+
 
   <ul class="topnav">
     <li>
@@ -328,118 +79,15 @@
     </a>
 
     <a class='section/aboutus' name='about'>
-      <h1>About us</h1>
+      <h1>Meet the Co-Founders</h1>
       <div class='us'>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="david.jpg" alt="David" style="width:100%">
-              <div class="container">
-                <h2>David Tanhelson</h2>
-                <p class="title">CEO &amp; Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="luis.jpg" alt="Luis" style="width:100%">
-              <div class="container">
-                <h2>Luis Souto Maior</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="miriam.jpg" alt="Miriam" style="width:100%">
-              <div class="container">
-                <h2>Miriam Nightingale</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="saba.jpg" alt="Saba" style="width:100%">
-              <div class="container">
-                <h2>Saba Aslam</h2>
-                <p class="title">CEO &amp; Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="richard.jpg" alt="Richard" style="width:100%">
-              <div class="container">
-                <h2>Richard Beddoes</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="curt.jpg" alt="Curt" style="width:100%">
-              <div class="container">
-                <h2>Curt Zerr</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>example@example.com</p>
-                <p>
-                  <button class="button">Contact</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+	<p id="person0"></p>
+<p id="person1"></p>
+<p id="person2"></p>
+<p id="person3"></p>
+<p id="person4"></p>
+<p id="person5"></p>
       </div>
-
-
-
-      <!--
-      <h2></h2>
-      <p>test </p>
-      <h2></h2>
-      <p>test </p>
-      <h2></h2>
-      <p>test </p>
-      <h2></h2>
-      <p>test </p>
-      <h2></h2>
-      <p>test </p>
-      <h2></h2>
-      <p>test </p>
-     
 
     </a>
 
@@ -452,12 +100,18 @@
     </a>
 
     </a>
-    -->
+
 
 
 
 
   </div>
+
+
+
+
+    <script type="text/javascript" src="script.js" charset="UTF-8"></script>
+
 
 </body>
 
