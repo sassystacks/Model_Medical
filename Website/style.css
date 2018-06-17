@@ -10,6 +10,25 @@ body {
   line-height: 26.4px;
 }
 
+/* unvisited link */
+
+a:link {
+  color: #45BEC8;
+  text-decoration: none;
+}
+
+/* visited link */
+
+a:visited {
+  color: #097095;
+}
+
+/* selected link */
+
+a:active {
+  color: #FD6569;
+}
+
 h1 {
   padding-top: 7%;
 }
@@ -83,14 +102,34 @@ ul.topnav li.right {
 
 .logo {
   display: block;
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%
+  margin-top: 10%
 }
 
 .motivation {
   font-style: italic;
+}
+
+.portpic {
+  display: block;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  padding-bottom: 5px;
+  width: 60%;
+}
+
+.portpic img {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.portpic p {
+  color: black;
+  bottom: 0;
 }
 
 .contact {
@@ -110,13 +149,12 @@ ul.topnav li.right {
 .face {
   width: 100%;
   border-radius: 90%/100%;
-   display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Add some shadows to create a card effect */
-
 
 .tab {
   width: 100%;
@@ -155,7 +193,6 @@ ul.topnav li.right {
   font-size: 18px;
 }
 
-
 /* Some left and right padding inside the container */
 
 .title {
@@ -167,17 +204,44 @@ ul.topnav li.right {
 }
 
 @media screen and (max-width: 700px) {
+  .body {
+    margin
+  }
   ul.topnav li.right, ul.topnav li {
     float: none;
   }
+
   ul.topnav {
     position: relative;
     width: 90%;
+    margin-left: -10%;
+
   }
+
   .logo {
     display: block;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .motivation, .description {
+    margin: 0px;
+
+    padding: 0px;
+    padding-top: 20px;
+    text-align: justify;
+    background-image: None;
+    width: 100%;
+  }
+
+  .motivation p, .description p {
+    margin: 0px;
+    padding: 0px;
+    background-image: None;
+  }
+
+  .portpic {
+    width: 100%
   }
 }

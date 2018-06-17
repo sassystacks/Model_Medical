@@ -1,6 +1,3 @@
-
-
-
 for (var a = [], i = 0; i <= 5; ++i) a[i] = i;
 
 // http://stackoverflow.com/questions/962802#962890
@@ -38,7 +35,7 @@ var description = [
 var i;
 a = shuffle(a);
 
-  var code = '<table style="width:100%"> <div class=" card"><tr>';
+var code = '<table style="width:100%"> <div class=" card"><tr>';
 
 document.getElementById("person1").innerHTML += code;
 
@@ -46,9 +43,14 @@ for (i = 0; i <= 5; i++) {
 
   j = a[i]
 
+  if (window.innerWidth > 1000) {
 
-  var code = '<table class = "tab"> <div class=" card"><tr style="text-align:center">  <col width="50"><col width="100"><th><img src="' + Name[j] + '.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><h2>' + FullName[j] + '</h2><p class="title"> ' + title[j] + '   </p><p></p></div></div></th> <th> <div class="description"> <p>' + description[j] + '</p></th></tr></div></table>';
 
+    var code = '<table class = "tab"> <div class=" card"><tr style="text-align:center">  <col width="50"><col width="100"><th><h2>' + FullName[j] + '</h2><img src="' + Name[j] + '_burned.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><p class="title"> ' + title[j] + '   </p><p></p></div></div></th> <th> <div class="description"> <p>' + description[j] + '</p></th></tr></div></table>';
+  } else {
+
+    var code = '<table class = "tab"> <div class=" card"><th style="text-align:center">  <col width="100"><col width="100"><tr><h2>' + FullName[j] + '</h2><img src="' + Name[j] + '_burned.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><p class="title"> ' + title[j] + '   </p><p></p></div></div></tr> <tr> <div class="description"> <p>' + description[j] + '</p></tr></th></div></table>';
+  }
   document.getElementById("person1").innerHTML += code;
 
 }
