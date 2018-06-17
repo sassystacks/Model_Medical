@@ -244,4 +244,8 @@ ul.topnav li.right {
   .portpic {
     width: 100%
   }
+
+  .title, .cad h2 {
+    text-align: center;
+  }
 }

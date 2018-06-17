@@ -49,7 +49,7 @@ for (i = 0; i <= 5; i++) {
     var code = '<table class = "tab"> <div class=" card"><tr style="text-align:center">  <col width="50"><col width="100"><th><h2>' + FullName[j] + '</h2><img src="' + Name[j] + '_burned.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><p class="title"> ' + title[j] + '   </p><p></p></div></div></th> <th> <div class="description"> <p>' + description[j] + '</p></th></tr></div></table>';
   } else {
 
-    var code = '<table class = "tab"> <div class=" card"><th style="text-align:center">  <col width="100"><col width="100"><tr><h2>' + FullName[j] + '</h2><img src="' + Name[j] + '_burned.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><p class="title"> ' + title[j] + '   </p><p></p></div></div></tr> <tr> <div class="description"> <p>' + description[j] + '</p></tr></th></div></table>';
+    var code = '<table class = "tab"> <div class=" card"><th style="text-align:center">  <col width="100"><col width="100"><tr><h2 style="text-align:center">' + FullName[j] + '</h2><img src="' + Name[j] + '_burned.jpg" alt="' + Name[j] + '" class="face"> <div class="container"><p class="title"> ' + title[j] + '   </p><p></p></div></div></tr> <tr> <div class="description"> <p>' + description[j] + '</p></tr></th></div></table>';
   }
   document.getElementById("person1").innerHTML += code;
 
