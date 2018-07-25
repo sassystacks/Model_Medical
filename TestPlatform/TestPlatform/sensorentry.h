@@ -7,18 +7,20 @@
 class SensorEntry: private QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString sensorType READ sensorType WRITE setSensorType NOTIFY sensorTypeChanged);
+    Q_PROPERTY(QString inputType READ inputType WRITE setInputType NOTIFY inputTypeChanged)
 
 public:
+
     explicit SensorEntry(QObject *parent = nullptr);
 
-    QString sensorType() const;
-    void setSensorType(const QString &sensorType);
+    QString inputType() const;
+    void setinputType(const QString &sensorType);
 
     SensorEntry();
+
 signals:
 
-    void sensorChanged();
+    void inputTypeChanged();
 
 public slots:
 

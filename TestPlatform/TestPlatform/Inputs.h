@@ -13,7 +13,7 @@ class Sensors: public QObject
 
 public:
 
-    typedef QList<SensorEntry*> Sensor;
+    typedef QList<SensorEntry*> SensorList;
     explicit Sensors(QObject *parent = nullptr);
     Sensor sensor() const;
 
@@ -27,9 +27,10 @@ signals:
 
 public slots:
 
+
 private:
 
-    Sensor m_sensor;
+    SensorList m_sensor;
 
 };
 
